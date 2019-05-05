@@ -12,7 +12,7 @@ spec:
         name: envtestt
     spec:
       containers:
-      - name: envtest
+      - name: envtestt
         image: gcr.io/<PROJECT_ID>/envtestt
         ports:
         - containerPort: 3000
