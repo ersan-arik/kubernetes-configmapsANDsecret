@@ -3,17 +3,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: envtestt
+  name: envtest
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: envtestt
+        name: envtest
     spec:
       containers:
       - name: envtest
-        image: gcr.io/<PROJECT_ID>/envtestt
+        image: gcr.io/<PROJECT_ID>/envtest
         ports:
         - containerPort: 3000
         env:
